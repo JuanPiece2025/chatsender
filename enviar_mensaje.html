@@ -41,15 +41,25 @@
             text-align: center;
             margin-bottom: 20px;
         }
+
+        .chatango-embed {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>Chat en Tiempo Real con Mi Amigo</h1>
     <div class="chat-container">
         <p class="note">Aquí abajo se cargará la ventana de chat. ¡Mantén esta página abierta para comunicarte en tiempo real!</p>
-        </div>
+    </div>
 
-    <script id="cid0020000405390320251" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 800px;height: 500px;">{"handle":"juanpiecechat","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"cnrs":"1","fwtickm":1}}</script>
+    <div class="chatango-embed">
+        <iframe id="cid0020000405390446903" frameborder="0" width="100%" height="100%" src="https://st.chatango.com/live.aspx?cid=0020000405390446903&amp;v=0" style="visibility: visible;"></iframe>
+    </div>
 
     <p class="note">Asegúrate de compartir la URL de esta página con tu amigo para que ambos puedan chatear.</p>
 </body>
