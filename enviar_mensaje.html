@@ -42,9 +42,10 @@
             margin-bottom: 20px;
         }
 
-        .chatbro-embed {
-            width: 800px; /* Establecemos un ancho para el contenedor, aunque el script lo ajustará */
-            height: 500px; /* Establecemos una altura para el contenedor, aunque el script lo ajustará */
+        .cbox-embed {
+            width: 80%; /* Ajustamos el ancho para que coincida con el contenedor principal */
+            max-width: 700px; /* Mantenemos el máximo ancho */
+            height: 450px;
             margin-bottom: 20px;
         }
     </style>
@@ -55,8 +56,8 @@
         <p class="note">Aquí abajo se cargará la ventana de chat. ¡Mantén esta página abierta para comunicarte en tiempo real!</p>
     </div>
 
-    <div class="chatbro-embed">
-        <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '093Sy'});</script>
+    <div class="cbox-embed">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3545630&boxtag=4RFVZH" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
     </div>
 
     <p class="note">Asegúrate de compartir la URL de esta página con tu amigo para que ambos puedan chatear.</p>
