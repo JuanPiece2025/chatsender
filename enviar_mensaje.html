@@ -42,11 +42,14 @@
             margin-bottom: 20px;
         }
 
-        .cbox-embed {
+        .rumbletalk-embed {
             width: 80%; /* Ajustamos el ancho para que coincida con el contenedor principal */
             max-width: 700px; /* Mantenemos el máximo ancho */
-            height: 450px;
             margin-bottom: 20px;
+        }
+
+        .rumbletalk-embed > div {
+            height: 500px !important; /* Aseguramos que el div interno tenga la altura */
         }
     </style>
 </head>
@@ -56,8 +59,8 @@
         <p class="note">Aquí abajo se cargará la ventana de chat. ¡Mantén esta página abierta para comunicarte en tiempo real!</p>
     </div>
 
-    <div class="cbox-embed">
-        <iframe src="https://www3.cbox.ws/box/?boxid=3545630&boxtag=4RFVZH" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    <div class="rumbletalk-embed">
+        <div style="height: 500px;"><div id="rt-eab8cfcc93b7eae32851d10649f723d5"></div> <script src="https://rumbletalk.com/client/?dqR2IGo@"></script></div>
     </div>
 
     <p class="note">Asegúrate de compartir la URL de esta página con tu amigo para que ambos puedan chatear.</p>
