@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Usualmente se utiliza la función 'fetch' para hacer una petición POST
             console.log('Mensaje a enviar:', message);
 
-            fetch('/api/messages', { // Reemplaza '/api/messages' con la ruta correcta de tu backend
+            fetch('https://juanpiece.pythonanywhere.com/api/messages', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadMessages() {
         // Aquí iría la lógica para obtener los mensajes del backend
         // Usualmente se utiliza la función 'fetch' para hacer una petición GET
-        fetch('/api/messages') // Reemplaza '/api/messages' con la ruta correcta de tu backend
+        fetch('https://juanpiece.pythonanywhere.com/api/messages')
             .then(response => response.json())
             .then(messages => {
                 messageList.innerHTML = ''; // Limpiar la lista de mensajes actual
